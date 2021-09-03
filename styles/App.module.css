@@ -11,3 +11,25 @@
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
+.width {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction:  row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.pl2 {
+    padding-left: 2px;
+}
+.mt2{
+    margin-top: 2px;
+}

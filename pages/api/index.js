@@ -5,7 +5,7 @@ export default function handler(req, res) {
     switch(method){
         case "POST":
             if(typeof body.data === "string"){
-                res.status(200).json({data: reverseString(body.data)});
+                res.status(200).json({text: reverseString(body.data)});
             } else {
                 res.status(400).json({error: "Request must be a string"});
             }
