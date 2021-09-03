@@ -8,14 +8,13 @@ export default function App() {
 
     const callApi = async () => {
         if(stringValue.length > 0){
-            axios.post("/data", {data: stringValue}).then(({data}) =>{ 
-                if(data?.text){
-                    setResponse(data?.text);
-                    setError(false)
-                } else {
-                    setError(true);
-                }
-            }).catch(() => setError(true));
+            try {
+                let {data} = await axios.post("/data", {data: stringValue});
+                setResponse(data?.text);
+                setError(false);
+            } catch(err) {
+                setError(true);
+            }
         } else {
             setError(true)
         }
