@@ -1,0 +1,35 @@
+.error {
+    border-color:red !important;
+}
+
+.input {
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;    
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.width {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction:  row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.pl2 {
+    padding-left: 2px;
+}
+.mt2{
+    margin-top: 2px;
+}
